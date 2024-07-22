@@ -11,7 +11,7 @@ tape('should store and retrieve thing', function (t) {
     t.ifError(err, 'should not error')
 
     Things.get(key, function (err, doc) {
-      t.ifError(err, 'should not error')
+      t.ifError(err, 'should not erro')
 
       t.deepEqual(doc.cat, value.cat, 'should match')
       t.end()
