@@ -13,7 +13,7 @@ tape('healthcheck', function (t) {
     t.ifError(err, 'no error')
 
     t.equal(res.statusCode, 200, 'correct statusCode')
-    t.equal(res.body.status, 'OK', 'status is ok')
+    t.equal(res.body.status, 'OK', 'status is 200')
     t.end()
   })
 })
